@@ -14,4 +14,18 @@
     <color name="dark_blue">#1976D2</color>
     <color name="dark_yellow">#FBC02D</color>
     <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="home">#5B37B7</color>
+
+    <color name="like">#C9379D</color>
+
+    <color name="search">#E6A919</color>
+    <color name="profile">#1194AA</color>
+    ////
+<color name="cl1"> #F67280</color>
+    <color name="recovered"> #019031</color>
+    <color name="confirmed"> #192A56</color>
+    <color name="deceased"> #BA2F16 </color>
+    <color name="active"> #1287A5 </color>
+
+
 </resources>

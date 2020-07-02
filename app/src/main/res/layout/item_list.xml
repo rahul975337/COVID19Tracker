@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-  android:layout_margin="25dp"
 
     android:background="#fff"
     android:orientation="horizontal">
@@ -13,11 +12,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="2"
-        android:padding="8dp"
+        android:padding="4dp"
         android:textAllCaps="true"
-        android:textColor="@android:color/black"
+android:textColor="#000"
         android:textStyle="bold"
-        android:textSize="10sp"/>
+        android:textSize="12sp"/>
 
     <TextView
         android:id="@+id/confirmedTv"
@@ -25,40 +24,44 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="8dp"
+
         android:textAlignment="viewEnd"
         android:textAllCaps="true"
         android:textStyle="bold"
-        android:textSize="10sp"/>
+        android:textSize="12sp"/>
     <TextView
         android:id="@+id/activeTv"
         android:layout_weight="1.5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+
         android:padding="8dp"
         android:textAlignment="viewEnd"
         android:textAllCaps="true"
         android:textStyle="bold"
-        android:textSize="10sp"/>
+        android:textSize="12sp"/>
     <TextView
         android:id="@+id/recoveredTv"
         android:layout_weight="1.5"
         android:layout_width="0dp"
+
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:textAlignment="viewEnd"
         android:textAllCaps="true"
         android:textStyle="bold"
-        android:textSize="10sp" />
+        android:textSize="12sp" />
     <TextView
         android:id="@+id/deceasedTv"
         android:layout_weight="1.5"
         android:layout_width="0dp"
+
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:textAlignment="viewEnd"
         android:textAllCaps="true"
         android:textStyle="bold"
-        android:textSize="10sp"/>
+        android:textSize="12sp"/>
 
 
 </LinearLayout>
