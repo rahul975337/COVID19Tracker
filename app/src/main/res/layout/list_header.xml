@@ -2,6 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_margin="25dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
     android:orientation="horizontal">
 
 
@@ -13,6 +17,7 @@
         android:padding="8dp"
         android:text="STATE/UT"
         android:textAllCaps="true"
+
         android:textColor="@android:color/black"
         android:textStyle="bold" />
 
@@ -22,8 +27,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:text="CNFMD"
+        android:text="C"
         android:textAllCaps="true"
+        android:fontFamily="@font/coming_soon"
         android:textColor="@color/dark_red"
         android:textStyle="bold" />
 
@@ -33,7 +39,7 @@
         android:layout_weight="1"
         android:fontFamily="@font/coming_soon"
         android:padding="8dp"
-        android:text="ACTV"
+        android:text="A"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/dark_blue"
@@ -44,7 +50,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:text="RCVRD"
+        android:text="R"
+        android:fontFamily="@font/coming_soon"
         android:textAllCaps="true"
         android:textColor="@color/dark_green"
         android:textStyle="bold" />
@@ -54,7 +61,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:text="DCSD"
+        android:text="D"
+        android:fontFamily="@font/coming_soon"
         android:textAllCaps="true"
         android:textColor="@color/dark_yellow"
         android:textStyle="bold" />
