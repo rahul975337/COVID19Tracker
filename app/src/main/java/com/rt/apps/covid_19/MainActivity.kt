@@ -2,9 +2,13 @@ package com.rt.apps.covid_19
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
 import android.widget.AbsListView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.work.*
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
@@ -15,12 +19,22 @@ import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var stateListAdapter: StateListAdapter
 
+    lateinit var stateListAdapter: StateListAdapter
+    val isOpen = false
     @InternalCoroutinesApi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+       ////////
+        val fab: View = findViewById(R.id.extended_fab)
+        extended_fab.setOnClickListener { view ->
+            Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+                .setAction("Action", null)
+                .show()
+        }
+        //////////////////////
+
         list.addHeaderView(LayoutInflater.from(this).inflate(R.layout.list_header, list, false))
 
         fetchResults()

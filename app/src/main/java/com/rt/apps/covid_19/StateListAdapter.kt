@@ -15,23 +15,23 @@ class StateListAdapter(val list: List<StatewiseItem>) : BaseAdapter() {
         view.confirmedTv.apply {
             text = SpannableDelta(
                 "${item.confirmed}\n ↑ ${item.deltaconfirmed ?: "0"}",
-                "#192A56",
+                "#4E7CFF",
                 item.confirmed?.length ?: 0
             )
         }
         view.activeTv.text = SpannableDelta(
             "${item.active}\n ↑ ${item.deltaactive ?: "0"}",
-            "#1287A5",
+            "#7033FF",
             item.confirmed?.length ?: 0
         )
         view.recoveredTv.text = SpannableDelta(
             "${item.recovered}\n ↑ ${item.deltarecovered ?: "0"}",
-            "#019031",
+            "#F65164",
             item.recovered?.length ?: 0
         )
         view.deceasedTv.text = SpannableDelta(
             "${item.deaths}\n ↑ ${item.deltadeaths ?: "0"}",
-            "#BA2F16",
+            "#7A1C7B",
             item.deaths?.length ?: 0
         )
         view.stateTv.text = item.state
