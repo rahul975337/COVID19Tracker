@@ -63,7 +63,7 @@ android:background="@drawable/createdback"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
-                    android:backgroundTint="@color/active"
+                    android:backgroundTint="@color/confirmed"
                     android:orientation="vertical">
 
                     <TextView
@@ -71,7 +71,7 @@ android:background="@drawable/createdback"
                         android:layout_height="wrap_content"
                         android:text="Confirmed"
                         android:textAllCaps="true"
-                        android:textColor="@color/confirmed"
+                        android:textColor="@color/white"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -89,7 +89,7 @@ android:background="@drawable/createdback"
                         android:layout_marginTop="8dp"
                         android:textAllCaps="true"
 
-                        android:textColor="#2C3335"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -100,7 +100,7 @@ android:background="@drawable/createdback"
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:backgroundTint="@color/active"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
@@ -112,7 +112,7 @@ android:background="@drawable/createdback"
                         android:layout_height="wrap_content"
                         android:text=" Active  "
                         android:textAllCaps="true"
-                        android:textColor="@color/active"
+                        android:textColor="@color/white"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -121,7 +121,7 @@ android:background="@drawable/createdback"
                         android:layout_height="50dp"
                         android:layout_marginTop="4dp"
                         android:src="@drawable/ic_patient"
-                        android:tint="@color/active" />
+                        android:tint="@color/white" />
 
                     <TextView
                         android:id="@+id/activeTv"
@@ -129,7 +129,7 @@ android:background="@drawable/createdback"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:textAllCaps="true"
-                        android:textColor="#2C3335"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -152,7 +152,7 @@ android:background="@drawable/createdback"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-
+android:backgroundTint="@color/recovered"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
@@ -164,7 +164,7 @@ android:background="@drawable/createdback"
                         android:layout_height="wrap_content"
                         android:text="Recovered"
                         android:textAllCaps="true"
-                        android:textColor="@color/recovered"
+                        android:textColor="@color/white"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -173,7 +173,7 @@ android:background="@drawable/createdback"
                         android:layout_height="50dp"
                         android:layout_marginTop="4dp"
                         android:src="@drawable/ic_heart"
-                        android:tint="@color/recovered" />
+                        android:tint="@color/white" />
 
                     <TextView
                         android:id="@+id/recoveredTv"
@@ -181,7 +181,7 @@ android:background="@drawable/createdback"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:textAllCaps="true"
-                        android:textColor="#2C3335"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -195,7 +195,7 @@ android:background="@drawable/createdback"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
-
+android:backgroundTint="@color/deceased"
                     android:orientation="vertical">
 
                     <TextView
@@ -203,7 +203,7 @@ android:background="@drawable/createdback"
                         android:layout_height="wrap_content"
                         android:text="Deceased "
                         android:textAllCaps="true"
-                        android:textColor="@color/deceased"
+                        android:textColor="@color/white"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -212,7 +212,7 @@ android:background="@drawable/createdback"
                         android:layout_height="50dp"
                         android:layout_marginTop="4dp"
                         android:src="@drawable/ic_death"
-                        android:tint="@color/deceased" />
+                        android:tint="@color/white" />
 
                     <TextView
                         android:id="@+id/deceasedTv"
@@ -220,7 +220,7 @@ android:background="@drawable/createdback"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:textAllCaps="true"
-                        android:textColor="#2C3335"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
