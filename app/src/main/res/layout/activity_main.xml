@@ -11,13 +11,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#99AAAB"
         tools:context=".MainActivity">
 
         <RelativeLayout
             android:id="@+id/topcover"
             android:layout_width="match_parent"
+android:background="@drawable/createdback"
             android:layout_height="wrap_content"
-            android:background="@drawable/bgg">
+          >
 
             <TextView
                 android:id="@+id/textView"
@@ -25,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:fontFamily="sans-serif"
-                android:text="Covid-19 Tracker \n INDIA"
+                android:text="COVID-19 \n India"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
@@ -61,6 +63,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
+                    android:backgroundTint="@color/active"
                     android:orientation="vertical">
 
                     <TextView
@@ -77,7 +80,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="4dp"
                         android:src="@drawable/ic_virus"
-                        android:tint="@color/confirmed" />
+                        android:tint="#fff" />
 
                     <TextView
                         android:id="@+id/confirmedTv"
@@ -231,7 +234,6 @@
             android:id="@+id/list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_below="@+id/topcover"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"

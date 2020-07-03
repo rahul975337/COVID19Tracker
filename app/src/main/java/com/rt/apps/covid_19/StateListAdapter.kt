@@ -31,7 +31,7 @@ class StateListAdapter(val list: List<StatewiseItem>) : BaseAdapter() {
         )
         view.deceasedTv.text = SpannableDelta(
             "${item.deaths}\n ↑ ${item.deltadeaths ?: "0"}",
-            "#EA7773",
+            "#BA2F16",
             item.deaths?.length ?: 0
         )
         view.stateTv.text = item.state

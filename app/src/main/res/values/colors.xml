@@ -22,10 +22,11 @@
     <color name="profile">#1194AA</color>
     ////
 <color name="cl1"> #F67280</color>
-    <color name="recovered"> #019031</color>
-    <color name="confirmed"> #192A56</color>
-    <color name="deceased"> #BA2F16 </color>
-    <color name="active"> #1287A5 </color>
+    <color name="recovered"> #F65164</color>
+    <color name="confirmed"> #4E7CFF</color>
+    <color name="deceased"> #7A1C7B</color>
+    <color name="active"> #7033FF </color>
+    <color name="background">#070912</color>
 
 
 </resources>
