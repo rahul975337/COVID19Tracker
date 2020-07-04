@@ -18,7 +18,7 @@
         <RelativeLayout
             android:id="@+id/topcover"
             android:layout_width="match_parent"
-android:background="@drawable/createdback"
+android:background="@drawable/trapshape"
             android:layout_height="wrap_content"
           >
 
@@ -87,6 +87,7 @@ android:background="@drawable/createdback"
                         android:layout_height="wrap_content"
                         android:text="Confirmed"
                         android:textAllCaps="true"
+
                         android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold" />
