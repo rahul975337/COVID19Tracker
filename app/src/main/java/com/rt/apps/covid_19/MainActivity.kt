@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                 if (list.getChildAt(0) != null) {
                     swipeToRefresh.isEnabled = list.firstVisiblePosition === 0 && list.getChildAt(
                         0
-                    ).getTop() === 0
+                    ).top === 0
                 }
             }
         })
