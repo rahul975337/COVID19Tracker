@@ -16,7 +16,7 @@
         android:text="STATE/UT"
         android:textAllCaps="true"
 
-        android:textColor="@color/listbackground"
+        android:textColor="#DAE0E2"
         android:textStyle="bold" />
 
     <TextView
