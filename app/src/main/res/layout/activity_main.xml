@@ -19,9 +19,9 @@
         <RelativeLayout
             android:id="@+id/topcover"
             android:layout_width="match_parent"
-android:background="@drawable/trapshape"
+            android:background="@drawable/trapshape"
             android:layout_height="wrap_content"
-          >
+            >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -54,7 +54,7 @@ android:background="@drawable/trapshape"
                 android:src="@drawable/ic_indian"
                 android:layout_marginTop="43dp"
                 android:layout_marginLeft="90dp"
-></ImageView>
+                ></ImageView>
             <TextView
                 android:id="@+id/lastUpdatedTv"
                 android:layout_width="wrap_content"
@@ -64,7 +64,7 @@ android:background="@drawable/trapshape"
                 android:text="Last Updated"
                 android:textAlignment="viewEnd"
                 android:padding="3dp"
-android:backgroundTint="#2C3335"
+                android:backgroundTint="#2C3335"
                 android:background="@drawable/rounded_border"
                 android:textAllCaps="true"
                 android:textColor="#fff"
@@ -177,7 +177,7 @@ android:backgroundTint="#2C3335"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
-android:backgroundTint="@color/recovered"
+                    android:backgroundTint="@color/recovered"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
@@ -220,7 +220,7 @@ android:backgroundTint="@color/recovered"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
-android:backgroundTint="@color/deceased"
+                    android:backgroundTint="@color/deceased"
                     android:orientation="vertical">
 
                     <TextView
@@ -280,12 +280,46 @@ android:backgroundTint="@color/deceased"
                 android:layout_margin="16dp"
                 android:layout_gravity="bottom|end"
                 android:elevation="30dp"
-                android:onClick="OnClick"
+
+                android:contentDescription="fab"
+
+                android:textAllCaps="false"
+                app:icon="@drawable/virus"
+                app:rippleColor="@color/deceased" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/extended_fab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="80dp"
+                android:elevation="30dp"
+
+
+                android:visibility="invisible"
+
                 android:textAllCaps="false"
                 app:rippleColor="@color/deceased"
                 android:contentDescription="fab"
                 android:text="Precautions"
-                app:icon="@drawable/virus"/>
+                app:icon="@drawable/ic_girl" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/extended_fab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="134dp"
+                android:contentDescription="fab"
+                android:elevation="30dp"
+
+                android:text="Precautions"
+                android:textAllCaps="false"
+                android:visibility="invisible"
+                app:icon="@drawable/virus"
+                app:rippleColor="@color/deceased" />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
     </RelativeLayout>

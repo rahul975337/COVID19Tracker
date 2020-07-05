@@ -4,12 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.AbsListView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.work.*
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
@@ -17,9 +15,9 @@ import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.TimeUnit
 
-
 class MainActivity : AppCompatActivity() {
-
+    //for fab//
+    var isOpen = false
 
     lateinit var stateListAdapter: StateListAdapter
 
@@ -27,13 +25,65 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-       ////////
-        val fab: View = findViewById(R.id.extended_fab)
+/////////setting animations/////
+        val fabOpen = AnimationUtils.loadAnimation(this, R.anim.fab_open)
+        val fabClose = AnimationUtils.loadAnimation(this, R.anim.fab_close)
+        val fabRClockwise = AnimationUtils.loadAnimation(this, R.anim.rotate_clockwise)
+        val fabRAntiClockwise = AnimationUtils.loadAnimation(this, R.anim.rotate_anticlockwise)
+        //////setting up fab////
         extended_fab.setOnClickListener {
-            val intent=Intent(this,PrecautionActivity::class.java)
-            startActivity(intent)
+            if (isOpen) {
+                extended_fab1.startAnimation(fabClose)
+                extended_fab2.startAnimation(fabClose)
+                //visibility//
+                extended_fab1.visibility = View.INVISIBLE
+                extended_fab2.visibility = View.INVISIBLE
+                extended_fab1.isClickable = false
+                extended_fab2.isClickable = false
+                extended_fab.startAnimation(fabRClockwise)
+                isOpen = false
+
+            } else {
+                extended_fab1.startAnimation(fabOpen)
+                extended_fab2.startAnimation(fabOpen)
+                extended_fab.startAnimation(fabRAntiClockwise)
+                extended_fab1.visibility = View.VISIBLE
+                extended_fab2.visibility = View.VISIBLE
+                extended_fab1.isClickable = true
+                extended_fab2.isClickable = true
+                isOpen = true
+            }
+            extended_fab1.setOnClickListener {
+                val intent = Intent(this, precautionactivity1::class.java)
+                startActivity(intent)
+            }
+            extended_fab2.setOnClickListener {
+                val intent = Intent(this, precautionactivity2::class.java)
+                startActivity(intent)
+            }
         }
-        //////////////////////
+//       ////////
+//
+//        val fab: View = findViewById(R.id.extended_fab)
+//        extended_fab.setOnClickListener {
+//            val intent=Intent(this,PrecautionActivity::class.java)
+//            startActivity(intent)
+//        }
+//        //////////////////////
+//        ////////
+//        val fab1: View = findViewById(R.id.extended_fab1)
+//        extended_fab1.setOnClickListener {
+//            val intent=Intent(this,precautionactivity1::class.java)
+//            startActivity(intent)
+//        }
+//        //////////////////////
+//        ////////
+//        val fab2: View = findViewById(R.id.extended_fab2)
+//        extended_fab2.setOnClickListener {
+//            val intent=Intent(this,precautionactivity2::class.java)
+//            startActivity(intent)
+//        }
+//        //////////////////////
 
         list.addHeaderView(LayoutInflater.from(this).inflate(R.layout.list_header, list, false))
 
