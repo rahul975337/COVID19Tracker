@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                 isOpen = true
             }
             extended_fab1.setOnClickListener {
-                val intent = Intent(this, precautionactivity1::class.java)
+                val intent = Intent(this, PrecautionActivity::class.java)
                 startActivity(intent)
             }
             extended_fab2.setOnClickListener {
