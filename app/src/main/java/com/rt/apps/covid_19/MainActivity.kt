@@ -40,6 +40,10 @@ class MainActivity : AppCompatActivity() {
                 extended_fab2.visibility = View.INVISIBLE
                 extended_fab1.isClickable = false
                 extended_fab2.isClickable = false
+                //disabling when fab close
+                extended_fab1.isEnabled = false
+                extended_fab2.isEnabled = false
+
                 extended_fab.startAnimation(fabRClockwise)
                 isOpen = false
 
@@ -51,6 +55,8 @@ class MainActivity : AppCompatActivity() {
                 extended_fab2.visibility = View.VISIBLE
                 extended_fab1.isClickable = true
                 extended_fab2.isClickable = true
+                extended_fab1.isEnabled = true
+                extended_fab2.isEnabled = true
                 isOpen = true
             }
             extended_fab1.setOnClickListener {
