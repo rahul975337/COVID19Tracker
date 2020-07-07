@@ -1,10 +1,10 @@
-package com.rt.apps.covid_19.Fragments
+package com.rt.apps.covid_19.Prevention.PreventionFragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.rt.apps.covid_19.R
 
 /**

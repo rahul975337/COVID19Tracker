@@ -1,4 +1,4 @@
-package com.rt.apps.covid_19
+package com.rt.apps.covid_19.tracker
 
 import android.annotation.SuppressLint
 import android.app.NotificationChannel
@@ -13,6 +13,7 @@ import androidx.core.content.ContextCompat
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import com.google.gson.Gson
+import com.rt.apps.covid_19.R
 import kotlinx.coroutines.*
 import java.text.SimpleDateFormat
 
@@ -36,7 +37,9 @@ class NotificationWorker(
         val channelName = context.getString(R.string.default_notification_channel_name)
         val defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
         val notificationBuilder = NotificationCompat.Builder(context, channelId)
-            .setColor(ContextCompat.getColor(context, R.color.dark_red))
+            .setColor(ContextCompat.getColor(context,
+                R.color.dark_red
+            ))
             .setSmallIcon(R.drawable.ic_stat_notification_icon)
             .setContentTitle(context.getString(R.string.text_confirmed_cases, totalCount))
             .setContentText(context.getString(R.string.text_last_updated, time))

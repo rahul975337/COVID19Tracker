@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+
+    tools:context=".Essentials.EssentialActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <!-- Main content -->
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/Infected_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_gravity="bottom|end"
+            android:elevation="30dp"
+
+            android:contentDescription="fab"
+
+            android:textAllCaps="false"
+            app:icon="@drawable/virus"
+            app:rippleColor="@color/deceased" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/Essentials_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="80dp"
+            android:elevation="30dp"
+            android:visibility="invisible"
+            android:textAllCaps="false"
+            app:rippleColor="@color/deceased"
+            android:contentDescription="fab"
+            android:text="Essentials"
+            app:icon="@drawable/ic_girl" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/About_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="134dp"
+            android:contentDescription="fab"
+            android:elevation="30dp"
+            android:text="About Covid-19"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            app:icon="@drawable/virus"
+            app:rippleColor="@color/deceased" />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/Prevention_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="188dp"
+            android:contentDescription="fab"
+            android:elevation="30dp"
+            android:text="Prevention"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            app:icon="@drawable/virus"
+            app:rippleColor="@color/deceased" />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/Symptoms_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="242dp"
+            android:contentDescription="fab"
+            android:elevation="30dp"
+            android:text="Symptoms"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            app:icon="@drawable/virus"
+            app:rippleColor="@color/deceased" />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/Tracker_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="296dp"
+            android:contentDescription="fab"
+            android:elevation="30dp"
+            android:text="Tracker Covid-19"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            app:icon="@drawable/virus"
+            app:rippleColor="@color/deceased" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package com.rt.apps.covid_19
+package com.rt.apps.covid_19.tracker
 
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -10,6 +10,8 @@ object Client {
         .url("https://api.covid19india.org/data.json")
         .build()
 
-    val api = okHttpClient.newCall(request)
+    val api = okHttpClient.newCall(
+        request
+    )
 
 }

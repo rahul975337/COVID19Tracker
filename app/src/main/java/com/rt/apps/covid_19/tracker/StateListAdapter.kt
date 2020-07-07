@@ -1,9 +1,10 @@
-package com.rt.apps.covid_19
+package com.rt.apps.covid_19.tracker
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import com.rt.apps.covid_19.R
 import kotlinx.android.synthetic.main.item_list.view.*
 
 class StateListAdapter(val list: List<StatewiseItem>) : BaseAdapter() {

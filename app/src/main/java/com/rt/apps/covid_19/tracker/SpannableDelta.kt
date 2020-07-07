@@ -1,4 +1,4 @@
-package com.rt.apps.covid_19
+package com.rt.apps.covid_19.tracker
 
 import android.graphics.Color
 import android.text.Spannable

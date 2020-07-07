@@ -1,19 +1,19 @@
-package com.rt.apps.covid_19
+package com.rt.apps.covid_19.Prevention
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.rt.apps.covid_19.Fragments.*
+import com.rt.apps.covid_19.Prevention.PreventionFragments.*
 
 
-internal class PagerViewAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm!!) {
+internal class PreventionPagerViewAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm!!) {
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> {
-               HomeFragment()
+                HomeFragment()
             }
             1 -> {
-               SearchFragment()
+                SearchFragment()
             }
             2 -> {
                 AddFragment()
@@ -22,7 +22,7 @@ internal class PagerViewAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm!
                 NotificationFragment()
             }
             4 -> {
-               ProfileFragment()
+                ProfileFragment()
             }
             else -> HomeFragment()
         }

@@ -3,17 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/trans_yellow"
+    android:background="@color/trans_turq"
     android:gravity="center"
-    tools:context=".Fragments.HomeFragment">
+    tools:context=".Prevention.PreventionFragments.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/futurabook"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textSize="40sp"-->
+<!--        android:text="Home" />-->
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/futurabook"
-        android:textColor="@android:color/black"
-        android:textSize="40sp"
-        android:text="Home" />
+        android:layout_margin="40dp"
+        android:background="@drawable/rounded_border"
+        android:src="@drawable/ic_washhands"/>
+
 
 </RelativeLayout>

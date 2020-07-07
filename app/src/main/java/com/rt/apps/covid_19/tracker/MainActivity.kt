@@ -1,4 +1,4 @@
-package com.rt.apps.covid_19
+package com.rt.apps.covid_19.tracker
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,13 @@ import android.widget.AbsListView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.work.*
 import com.google.gson.Gson
+
+import com.rt.apps.covid_19.Essentials.EssentialActivity
+import com.rt.apps.covid_19.Infected.InfectedActivity
+import com.rt.apps.covid_19.Prevention.PreventionActivity
+import com.rt.apps.covid_19.R
+import com.rt.apps.covid_19.Symptoms.SymptomActivity
+import com.rt.apps.covid_19.About.AboutActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
 import java.text.SimpleDateFormat
@@ -26,70 +33,109 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 /////////setting animations/////
-        val fabOpen = AnimationUtils.loadAnimation(this, R.anim.fab_open)
-        val fabClose = AnimationUtils.loadAnimation(this, R.anim.fab_close)
-        val fabRClockwise = AnimationUtils.loadAnimation(this, R.anim.rotate_clockwise)
-        val fabRAntiClockwise = AnimationUtils.loadAnimation(this, R.anim.rotate_anticlockwise)
+        val fabOpen = AnimationUtils.loadAnimation(
+            this,
+            R.anim.fab_open
+        )
+        val fabClose = AnimationUtils.loadAnimation(
+            this,
+            R.anim.fab_close
+        )
+        val fabRClockwise = AnimationUtils.loadAnimation(
+            this,
+            R.anim.rotate_clockwise
+        )
+        val fabRAntiClockwise = AnimationUtils.loadAnimation(
+            this,
+            R.anim.rotate_anticlockwise
+        )
         //////setting up fab////
-        extended_fab.setOnClickListener {
+        Tracker_fab.setOnClickListener {
             if (isOpen) {
-                extended_fab1.startAnimation(fabClose)
-                extended_fab2.startAnimation(fabClose)
-                //visibility//
-                extended_fab1.visibility = View.INVISIBLE
-                extended_fab2.visibility = View.INVISIBLE
-                extended_fab1.isClickable = false
-                extended_fab2.isClickable = false
-                //disabling when fab close
-                extended_fab1.isEnabled = false
-                extended_fab2.isEnabled = false
+                About_fab.startAnimation(fabClose)
+                Symptoms_fab.startAnimation(fabClose)
+                Essentials_fab.startAnimation(fabClose)
+                Prevention_fab.startAnimation(fabClose)
+                Infected_fab.startAnimation(fabClose)
 
-                extended_fab.startAnimation(fabRClockwise)
+                    //visibility//
+                    About_fab.visibility = View.INVISIBLE
+                    Symptoms_fab.visibility = View.INVISIBLE
+                    Essentials_fab.visibility = View.INVISIBLE
+                    Prevention_fab.visibility = View.INVISIBLE
+                    Infected_fab.visibility = View.INVISIBLE
+                //clickable
+
+                        About_fab.isClickable = false
+                        Symptoms_fab.isClickable = false
+                        Essentials_fab.isClickable = false
+                        Prevention_fab.isClickable = false
+                        Infected_fab.isClickable = false
+                //disabling when fab close
+
+                            About_fab.isEnabled = false
+                            Symptoms_fab.isEnabled = false
+                            Essentials_fab.isEnabled = false
+                            Prevention_fab.isEnabled = false
+                            Infected_fab.isEnabled = false
+
+                Tracker_fab.startAnimation(fabRClockwise)
                 isOpen = false
 
             } else {
-                extended_fab1.startAnimation(fabOpen)
-                extended_fab2.startAnimation(fabOpen)
-                extended_fab.startAnimation(fabRAntiClockwise)
-                extended_fab1.visibility = View.VISIBLE
-                extended_fab2.visibility = View.VISIBLE
-                extended_fab1.isClickable = true
-                extended_fab2.isClickable = true
-                extended_fab1.isEnabled = true
-                extended_fab2.isEnabled = true
+
+
+                    About_fab.startAnimation(fabOpen)
+                    Symptoms_fab.startAnimation(fabOpen)
+                    Essentials_fab.startAnimation(fabOpen)
+                    Prevention_fab.startAnimation(fabOpen)
+                    Infected_fab.startAnimation(fabOpen)
+                     Tracker_fab.startAnimation(fabRAntiClockwise)
+                        ////
+
+                    About_fab.visibility = View.VISIBLE
+                    Symptoms_fab.visibility = View.VISIBLE
+                    Essentials_fab.visibility = View.VISIBLE
+                    Prevention_fab.visibility = View.VISIBLE
+                    Infected_fab.visibility = View.VISIBLE
+                //
+
+                        About_fab.isClickable = true
+                        Symptoms_fab.isClickable = true
+                        Essentials_fab.isClickable = true
+                        Prevention_fab.isClickable = true
+                        Infected_fab.isClickable = true
+                ///////////
+
+                           About_fab.isEnabled = true
+                            Symptoms_fab.isEnabled = true
+                            Essentials_fab.isEnabled = true
+                            Prevention_fab.isEnabled = true
+                            Infected_fab.isEnabled = true
                 isOpen = true
             }
-            extended_fab1.setOnClickListener {
-                val intent = Intent(this, PrecautionActivity::class.java)
+            About_fab.setOnClickListener {
+                val intent = Intent(this, AboutActivity::class.java)
                 startActivity(intent)
             }
-            extended_fab2.setOnClickListener {
-                val intent = Intent(this, precautionactivity2::class.java)
+            Symptoms_fab.setOnClickListener {
+                val intent = Intent(this, SymptomActivity::class.java)
                 startActivity(intent)
             }
+                Essentials_fab.setOnClickListener {
+                    val intent = Intent(this, EssentialActivity::class.java)
+                    startActivity(intent)
+                }
+               Prevention_fab.setOnClickListener {
+                    val intent = Intent(this, PreventionActivity::class.java)
+                    startActivity(intent)
+                }
+                Infected_fab.setOnClickListener {
+                    val intent = Intent(this, InfectedActivity::class.java)
+                    startActivity(intent)
+                }
         }
-//       ////////
-//
-//        val fab: View = findViewById(R.id.extended_fab)
-//        extended_fab.setOnClickListener {
-//            val intent=Intent(this,PrecautionActivity::class.java)
-//            startActivity(intent)
-//        }
-//        //////////////////////
-//        ////////
-//        val fab1: View = findViewById(R.id.extended_fab1)
-//        extended_fab1.setOnClickListener {
-//            val intent=Intent(this,precautionactivity1::class.java)
-//            startActivity(intent)
-//        }
-//        //////////////////////
-//        ////////
-//        val fab2: View = findViewById(R.id.extended_fab2)
-//        extended_fab2.setOnClickListener {
-//            val intent=Intent(this,precautionactivity2::class.java)
-//            startActivity(intent)
-//        }
-//        //////////////////////
+/////////////////////
 
         list.addHeaderView(LayoutInflater.from(this).inflate(R.layout.list_header, list, false))
 

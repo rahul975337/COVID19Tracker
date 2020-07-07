@@ -14,14 +14,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/background"
-        tools:context=".MainActivity">
+        tools:context=".tracker.MainActivity">
 
         <RelativeLayout
             android:id="@+id/topcover"
             android:layout_width="match_parent"
             android:background="@drawable/trapshape"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -274,7 +273,7 @@
             <!-- Main content -->
 
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                android:id="@+id/extended_fab"
+                android:id="@+id/Tracker_fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
@@ -288,25 +287,22 @@
                 app:rippleColor="@color/deceased" />
 
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                android:id="@+id/extended_fab1"
+                android:id="@+id/Infected_fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="80dp"
                 android:elevation="30dp"
-
-
                 android:visibility="invisible"
-
                 android:textAllCaps="false"
                 app:rippleColor="@color/deceased"
                 android:contentDescription="fab"
-                android:text="Precautions"
+                android:text="Infected?"
                 app:icon="@drawable/ic_girl" />
 
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                android:id="@+id/extended_fab2"
+                android:id="@+id/Essentials_fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
@@ -314,8 +310,49 @@
                 android:layout_marginBottom="134dp"
                 android:contentDescription="fab"
                 android:elevation="30dp"
-
-                android:text="Precautions"
+                android:text="Essentials"
+                android:textAllCaps="false"
+                android:visibility="invisible"
+                app:icon="@drawable/virus"
+                app:rippleColor="@color/deceased" />
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/Prevention_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="188dp"
+                android:contentDescription="fab"
+                android:elevation="30dp"
+                android:text="Prevention"
+                android:textAllCaps="false"
+                android:visibility="invisible"
+                app:icon="@drawable/virus"
+                app:rippleColor="@color/deceased" />
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/Symptoms_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="242dp"
+                android:contentDescription="fab"
+                android:elevation="30dp"
+                android:text="Symptoms"
+                android:textAllCaps="false"
+                android:visibility="invisible"
+                app:icon="@drawable/virus"
+                app:rippleColor="@color/deceased" />
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/About_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="296dp"
+                android:contentDescription="fab"
+                android:elevation="30dp"
+                android:text="About_Covid-19"
                 android:textAllCaps="false"
                 android:visibility="invisible"
                 app:icon="@drawable/virus"
