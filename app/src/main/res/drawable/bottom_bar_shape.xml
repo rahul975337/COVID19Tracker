@@ -4,10 +4,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <corners
-        android:bottomLeftRadius="10dip"
-        android:bottomRightRadius="10dip"
-        android:topLeftRadius="20dip"
-        android:topRightRadius="20dip" />
+        android:bottomLeftRadius="20dp"
+        android:bottomRightRadius="20dp"
+        android:topLeftRadius="20dp"
+        android:topRightRadius="20dp" />
 
 
     <padding

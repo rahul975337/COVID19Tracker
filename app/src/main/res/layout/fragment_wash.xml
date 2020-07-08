@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/rounded_border"
     android:gravity="center"
-    tools:context=".Prevention.PreventionFragments.MaskFragment">
+    tools:context=".Prevention.PreventionFragments.washFragment">
 
 
     <ImageView
@@ -15,7 +15,7 @@
         android:elevation="40dp"
         android:outlineAmbientShadowColor="@color/colorAccent"
         android:background="@drawable/card_shape"
-        android:src="@drawable/ic_workfromhome"/>
+        android:src="@drawable/ic_washhands"/>
 
 
 </RelativeLayout>

@@ -10,27 +10,36 @@ internal class PreventionPagerViewAdapter(fm: FragmentManager?) : FragmentPagerA
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0 -> {
-                HomeFragment()
+                MaskFragment()
             }
             1 -> {
-                SearchFragment()
+                washFragment()
             }
             2 -> {
-                AddFragment()
+                distanceFragment()
             }
             3 -> {
-                NotificationFragment()
+                coverFragment()
             }
             4 -> {
-                ProfileFragment()
+                homeFragment()
             }
-            else -> HomeFragment()
+            5 -> {
+                exerciseFragment()
+            }
+            6 -> {
+                immuneFragment()
+            }
+            7 -> {
+                consultFragment()
+            }
+            else -> MaskFragment()
         }
     }
 
     override fun getCount(): Int {
 
-        return 5
+        return 8
     }
 
 }

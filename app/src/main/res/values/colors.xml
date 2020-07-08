@@ -22,5 +22,7 @@
     <color name="trans_skyblue">#7508EFE1</color>
     <color name="trans_red">#75CC0000</color>
     <color name="trans_turq">#75FF5722</color>
+    ///
+    <color name="card_background">@color/white</color>
 
 </resources>

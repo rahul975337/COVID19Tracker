@@ -7,98 +7,6 @@
     tools:context=".tracker.MainActivity">
 
 
-    <LinearLayout
-        android:id="@+id/lin"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentBottom="false"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:padding="5dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/bottom_bar_shape"
-        android:elevation="5dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-
-        <ImageButton
-            android:id="@+id/homeBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@android:color/white"
-            android:padding="15dp"
-            android:src="@drawable/ic_home_black_"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <ImageButton
-            android:id="@+id/searchBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginStart="52dp"
-            android:background="@android:color/white"
-            android:padding="15dp"
-            android:src="@drawable/ic_search_black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
-
-        <ImageButton
-            android:id="@+id/addBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@android:color/white"
-            android:padding="15dp"
-            android:src="@drawable/ic_add_black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <ImageButton
-            android:id="@+id/notiBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginStart="52dp"
-            android:background="@android:color/white"
-            android:padding="15dp"
-            android:src="@drawable/ic_notifications_blck"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <ImageButton
-            android:id="@+id/profileBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginEnd="40dp"
-            android:background="@android:color/white"
-            android:padding="15dp"
-            android:src="@drawable/ic_person_outline_"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
-    </LinearLayout>
 
 
     <androidx.viewpager.widget.ViewPager
@@ -112,7 +20,7 @@
         <androidx.coordinatorlayout.widget.CoordinatorLayout
 
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentBottom="true">
 
             <!-- Main content -->
@@ -123,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:layout_gravity="bottom|end"
-                android:elevation="30dp"
+                android:elevation="20dp"
 
                 android:contentDescription="fab"
 
@@ -138,12 +46,12 @@
                 android:layout_gravity="bottom|end"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="80dp"
-                android:elevation="30dp"
+                android:elevation="20dp"
                 android:visibility="invisible"
                 android:textAllCaps="false"
                 app:rippleColor="@color/deceased"
                 android:contentDescription="fab"
-                android:text="Essentials"
+                android:text="Infected?"
                 app:icon="@drawable/ic_girl" />
 
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -154,7 +62,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="134dp"
                 android:contentDescription="fab"
-                android:elevation="30dp"
+                android:elevation="20dp"
                 android:text="About Covid-19"
                 android:textAllCaps="false"
                 android:visibility="invisible"
@@ -168,7 +76,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="188dp"
                 android:contentDescription="fab"
-                android:elevation="30dp"
+                android:elevation="20dp"
                 android:text="Infected?"
                 android:textAllCaps="false"
                 android:visibility="invisible"
@@ -182,7 +90,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="242dp"
                 android:contentDescription="fab"
-                android:elevation="30dp"
+                android:elevation="20dp"
                 android:text="Symptoms"
                 android:textAllCaps="false"
                 android:visibility="invisible"
@@ -196,7 +104,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="296dp"
                 android:contentDescription="fab"
-                android:elevation="30dp"
+                android:elevation="20dp"
                 android:text="Tracker Covid-19"
                 android:textAllCaps="false"
                 android:visibility="invisible"
@@ -206,6 +114,111 @@
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bottom_bar_shape"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/maskBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="2dp"
+
+            android:src="@drawable/dark_dot" />
+
+
+        <ImageButton
+            android:id="@+id/washBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/white"
+
+            android:padding="2dp"
+
+            android:src="@drawable/dark_dot" />
+
+
+        <ImageButton
+            android:id="@+id/distanceBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+
+            android:padding="2dp"
+
+            android:src="@drawable/dark_dot" />
+
+
+        <ImageButton
+            android:id="@+id/coverBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+
+
+            android:padding="2dp"
+
+            android:src="@drawable/dark_dot" />
+
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/white"
+
+            android:padding="2dp"
+
+            android:src="@drawable/dark_dot" />
+
+        <ImageButton
+            android:id="@+id/exerciseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/white"
+
+            android:padding="2dp"
+
+            android:src="@drawable/dark_dot" />
+
+        <ImageButton
+            android:id="@+id/immuneBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/white"
+
+            android:padding="2dp"
+
+            android:src="@drawable/dark_dot" />
+
+        <ImageButton
+            android:id="@+id/consultBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/white"
+
+            android:padding="2dp"
+
+            android:src="@drawable/dark_dot" />
+
+
+    </LinearLayout>
 
 
 </RelativeLayout>

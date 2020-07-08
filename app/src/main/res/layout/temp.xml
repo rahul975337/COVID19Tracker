@@ -1,29 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+
+<RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Essentials.EssentialActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
 
-
-
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/eViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        />
+    tools:context=".Essentials.EssentialActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
 
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
 
         <!-- Main content -->
+
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/Essentials_fab"
             android:layout_width="wrap_content"
@@ -107,63 +101,10 @@
             android:text="Tracker Covid-19"
             android:textAllCaps="false"
             android:visibility="invisible"
-            app:icon="@drawable/virus"
-            app:rippleColor="@color/deceased" />
+        app:icon="@drawable/virus"
+        app:rippleColor="@color/deceased" />
+
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-
-    <LinearLayout
-        android:id="@+id/lin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="150dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/bottom_bar_shape"
-
-        android:gravity="center"
-        android:orientation="horizontal">
-
-
-        <ImageButton
-            android:id="@+id/generalBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:padding="2dp"
-
-            android:src="@drawable/dark_dot" />
-
-
-        <ImageButton
-            android:id="@+id/marketBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:background="@android:color/white"
-
-            android:padding="2dp"
-
-            android:src="@drawable/dark_dot" />
-
-
-        <ImageButton
-            android:id="@+id/medicalBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-
-            android:padding="2dp"
-
-            android:src="@drawable/dark_dot" />
-
-
-
-
-    </LinearLayout>
-
-
 </RelativeLayout>

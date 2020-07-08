@@ -13,16 +13,22 @@ import com.rt.apps.covid_19.Infected.InfectedActivity
 import com.rt.apps.covid_19.R
 import com.rt.apps.covid_19.Symptoms.SymptomActivity
 import com.rt.apps.covid_19.tracker.MainActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.About_fab
+import kotlinx.android.synthetic.main.activity_main.Essentials_fab
+import kotlinx.android.synthetic.main.activity_main.Infected_fab
+import kotlinx.android.synthetic.main.activity_main.Prevention_fab
+import kotlinx.android.synthetic.main.activity_main.Symptoms_fab
+import kotlinx.android.synthetic.main.activity_main.Tracker_fab
+import kotlinx.android.synthetic.main.activity_prevention.*
 
 class PreventionActivity : AppCompatActivity() {
     //for fab//
     var isOpen = false
+    private lateinit var maskBtn: ImageButton
+    private lateinit var distanceBtn: ImageButton
+    private lateinit var coverBtn: ImageButton
+    private lateinit var washBtn: ImageButton
     private lateinit var homeBtn: ImageButton
-    private lateinit var addBtn: ImageButton
-    private lateinit var notiBtn: ImageButton
-    private lateinit var searchBtn: ImageButton
-    private lateinit var profileBtn: ImageButton
 
     private lateinit var mViewPager: ViewPager
     private lateinit var mPreventionPagerViewAdapter: PreventionPagerViewAdapter
@@ -78,6 +84,9 @@ class PreventionActivity : AppCompatActivity() {
                 Essentials_fab.isEnabled = false
 ////////////////////////
                 Prevention_fab.startAnimation(fabRClockwise)
+                /////////
+                lin.visibility = View.VISIBLE
+                //////////
                 isOpen = false
 
             } else {
@@ -111,6 +120,9 @@ class PreventionActivity : AppCompatActivity() {
                 About_fab.isEnabled = true
                 Infected_fab.isEnabled = true
                 Essentials_fab.isEnabled = true
+                //////////
+                lin.visibility = View.GONE
+                //////////
                 isOpen = true
             }
             Tracker_fab.setOnClickListener {
@@ -138,37 +150,37 @@ class PreventionActivity : AppCompatActivity() {
         ///////////////////////////////
         // init views
         mViewPager = findViewById(R.id.mViewPager)
+        maskBtn = findViewById(R.id.maskBtn)
+        distanceBtn = findViewById(R.id.distanceBtn)
         homeBtn = findViewById(R.id.homeBtn)
-        addBtn = findViewById(R.id.addBtn)
-        profileBtn = findViewById(R.id.profileBtn)
-        searchBtn = findViewById(R.id.searchBtn)
-        notiBtn = findViewById(R.id.notiBtn)
+        washBtn = findViewById(R.id.washBtn)
+        coverBtn = findViewById(R.id.coverBtn)
 
 
         //onclick listner
 
-        homeBtn.setOnClickListener {
+        maskBtn.setOnClickListener {
             mViewPager.currentItem = 0
 
         }
 
-        searchBtn.setOnClickListener {
+        washBtn.setOnClickListener {
 
             mViewPager.currentItem = 1
 
         }
 
-        addBtn.setOnClickListener {
+        distanceBtn.setOnClickListener {
             mViewPager.currentItem = 2
 
         }
 
-        notiBtn.setOnClickListener {
+        coverBtn.setOnClickListener {
             mViewPager.currentItem = 3
 
         }
 
-        profileBtn.setOnClickListener {
+        homeBtn.setOnClickListener {
             mViewPager.currentItem = 4
 
         }
@@ -181,7 +193,7 @@ class PreventionActivity : AppCompatActivity() {
                 supportFragmentManager
             )
         mViewPager.adapter = mPreventionPagerViewAdapter
-        mViewPager.offscreenPageLimit = 5
+        mViewPager.offscreenPageLimit = 8
 
 
 
@@ -204,7 +216,7 @@ class PreventionActivity : AppCompatActivity() {
 
 
         mViewPager.currentItem = 0
-        homeBtn.setImageResource(R.drawable.ic_home_pink)
+        maskBtn.setImageResource(R.drawable.glowing_dot)
 
 
 
@@ -216,53 +228,89 @@ class PreventionActivity : AppCompatActivity() {
 
 
         if (position == 0) {
-            homeBtn.setImageResource(R.drawable.ic_home_pink)
-            searchBtn.setImageResource(R.drawable.ic_search_black)
-            addBtn.setImageResource(R.drawable.ic_add_black)
-            notiBtn.setImageResource(R.drawable.ic_notifications_blck)
-            profileBtn.setImageResource(R.drawable.ic_person_outline_)
-
-
+            maskBtn.setImageResource(R.drawable.glowing_dot)
+            washBtn.setImageResource(R.drawable.dark_dot)
+            distanceBtn.setImageResource(R.drawable.dark_dot)
+            coverBtn.setImageResource(R.drawable.dark_dot)
+            homeBtn.setImageResource(R.drawable.dark_dot)
+            exerciseBtn.setImageResource(R.drawable.dark_dot)
+            immuneBtn.setImageResource(R.drawable.dark_dot)
+            consultBtn.setImageResource(R.drawable.dark_dot)
 
 
         }
         if (position == 1) {
-            homeBtn.setImageResource(R.drawable.ic_home_black_)
-            searchBtn.setImageResource(R.drawable.ic_search_pink)
-            addBtn.setImageResource(R.drawable.ic_add_black)
-            notiBtn.setImageResource(R.drawable.ic_notifications_blck)
-            profileBtn.setImageResource(R.drawable.ic_person_outline_)
-
-
+            maskBtn.setImageResource(R.drawable.dark_dot)
+            washBtn.setImageResource(R.drawable.glowing_dot)
+            distanceBtn.setImageResource(R.drawable.dark_dot)
+            coverBtn.setImageResource(R.drawable.dark_dot)
+            homeBtn.setImageResource(R.drawable.dark_dot)
+            exerciseBtn.setImageResource(R.drawable.dark_dot)
+            immuneBtn.setImageResource(R.drawable.dark_dot)
+            consultBtn.setImageResource(R.drawable.dark_dot)
 
 
         }
         if (position == 2) {
-            homeBtn.setImageResource(R.drawable.ic_home_black_)
-            searchBtn.setImageResource(R.drawable.ic_search_black)
-            addBtn.setImageResource(R.drawable.ic_add_pink)
-            notiBtn.setImageResource(R.drawable.ic_notifications_blck)
-            profileBtn.setImageResource(R.drawable.ic_person_outline_)
-
+            maskBtn.setImageResource(R.drawable.dark_dot)
+            washBtn.setImageResource(R.drawable.dark_dot)
+            distanceBtn.setImageResource(R.drawable.glowing_dot)
+            coverBtn.setImageResource(R.drawable.dark_dot)
+            homeBtn.setImageResource(R.drawable.dark_dot)
+            exerciseBtn.setImageResource(R.drawable.dark_dot)
+            immuneBtn.setImageResource(R.drawable.dark_dot)
+            consultBtn.setImageResource(R.drawable.dark_dot)
         }
         if (position == 3) {
-            homeBtn.setImageResource(R.drawable.ic_home_black_)
-            searchBtn.setImageResource(R.drawable.ic_search_black)
-            addBtn.setImageResource(R.drawable.ic_add_black)
-            notiBtn.setImageResource(R.drawable.ic_notifications_fill)
-            profileBtn.setImageResource(R.drawable.ic_person_outline_)
-
+            maskBtn.setImageResource(R.drawable.dark_dot)
+            washBtn.setImageResource(R.drawable.dark_dot)
+            distanceBtn.setImageResource(R.drawable.dark_dot)
+            coverBtn.setImageResource(R.drawable.glowing_dot)
+            homeBtn.setImageResource(R.drawable.dark_dot)
+            exerciseBtn.setImageResource(R.drawable.dark_dot)
+            immuneBtn.setImageResource(R.drawable.dark_dot)
+            consultBtn.setImageResource(R.drawable.dark_dot)
         }
         if (position == 4) {
-            homeBtn.setImageResource(R.drawable.ic_home_black_)
-            searchBtn.setImageResource(R.drawable.ic_search_black)
-            addBtn.setImageResource(R.drawable.ic_add_black)
-            notiBtn.setImageResource(R.drawable.ic_notifications_blck)
-            profileBtn.setImageResource(R.drawable.ic_person_pink_fill)
-
+            maskBtn.setImageResource(R.drawable.dark_dot)
+            washBtn.setImageResource(R.drawable.dark_dot)
+            distanceBtn.setImageResource(R.drawable.dark_dot)
+            coverBtn.setImageResource(R.drawable.dark_dot)
+            homeBtn.setImageResource(R.drawable.glowing_dot)
+            exerciseBtn.setImageResource(R.drawable.dark_dot)
+            immuneBtn.setImageResource(R.drawable.dark_dot)
+            consultBtn.setImageResource(R.drawable.dark_dot)
         }
-
-
+        if (position == 5) {
+            maskBtn.setImageResource(R.drawable.dark_dot)
+            washBtn.setImageResource(R.drawable.dark_dot)
+            distanceBtn.setImageResource(R.drawable.dark_dot)
+            coverBtn.setImageResource(R.drawable.dark_dot)
+            homeBtn.setImageResource(R.drawable.dark_dot)
+            exerciseBtn.setImageResource(R.drawable.glowing_dot)
+            immuneBtn.setImageResource(R.drawable.dark_dot)
+            consultBtn.setImageResource(R.drawable.dark_dot)
+        }
+        if (position == 6) {
+            maskBtn.setImageResource(R.drawable.dark_dot)
+            washBtn.setImageResource(R.drawable.dark_dot)
+            distanceBtn.setImageResource(R.drawable.dark_dot)
+            coverBtn.setImageResource(R.drawable.dark_dot)
+            homeBtn.setImageResource(R.drawable.dark_dot)
+            exerciseBtn.setImageResource(R.drawable.dark_dot)
+            immuneBtn.setImageResource(R.drawable.glowing_dot)
+            consultBtn.setImageResource(R.drawable.dark_dot)
+        }
+        if (position == 7) {
+            maskBtn.setImageResource(R.drawable.dark_dot)
+            washBtn.setImageResource(R.drawable.dark_dot)
+            distanceBtn.setImageResource(R.drawable.dark_dot)
+            coverBtn.setImageResource(R.drawable.dark_dot)
+            homeBtn.setImageResource(R.drawable.dark_dot)
+            exerciseBtn.setImageResource(R.drawable.dark_dot)
+            immuneBtn.setImageResource(R.drawable.dark_dot)
+            consultBtn.setImageResource(R.drawable.glowing_dot)
+        }
 
 
     }

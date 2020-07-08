@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rounded_border"
+    android:background="#1E9DD7"
     android:gravity="center"
     tools:context=".Prevention.PreventionFragments.MaskFragment">
 
@@ -12,10 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="450dp"
         android:layout_margin="40dp"
-        android:elevation="40dp"
+      android:elevation="40dp"
         android:outlineAmbientShadowColor="@color/colorAccent"
         android:background="@drawable/card_shape"
-        android:src="@drawable/ic_workfromhome"/>
+
+        android:src="@drawable/ic_wearmask"/>
 
 
 </RelativeLayout>
