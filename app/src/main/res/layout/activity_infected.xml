@@ -27,7 +27,7 @@
             android:contentDescription="fab"
 
             android:textAllCaps="false"
-            app:icon="@drawable/virus"
+            app:icon="@drawable/ic_virus"
             app:rippleColor="@color/deceased" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -57,7 +57,7 @@
             android:text="About Covid-19"
             android:textAllCaps="false"
             android:visibility="invisible"
-            app:icon="@drawable/virus"
+            app:icon="@drawable/ic_virus"
             app:rippleColor="@color/deceased" />
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/Prevention_fab"
@@ -71,7 +71,7 @@
             android:text="Prevention"
             android:textAllCaps="false"
             android:visibility="invisible"
-            app:icon="@drawable/virus"
+            app:icon="@drawable/ic_virus"
             app:rippleColor="@color/deceased" />
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/Symptoms_fab"
@@ -85,7 +85,7 @@
             android:text="Symptoms"
             android:textAllCaps="false"
             android:visibility="invisible"
-            app:icon="@drawable/virus"
+            app:icon="@drawable/ic_virus"
             app:rippleColor="@color/deceased" />
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/Tracker_fab"
@@ -99,7 +99,7 @@
             android:text="Tracker Covid-19"
             android:textAllCaps="false"
             android:visibility="invisible"
-            app:icon="@drawable/virus"
+            app:icon="@drawable/ic_virus"
             app:rippleColor="@color/deceased" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

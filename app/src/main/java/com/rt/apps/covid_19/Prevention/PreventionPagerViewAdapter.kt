@@ -24,22 +24,14 @@ internal class PreventionPagerViewAdapter(fm: FragmentManager?) : FragmentPagerA
             4 -> {
                 homeFragment()
             }
-            5 -> {
-                exerciseFragment()
-            }
-            6 -> {
-                immuneFragment()
-            }
-            7 -> {
-                consultFragment()
-            }
+
             else -> MaskFragment()
         }
     }
 
     override fun getCount(): Int {
 
-        return 8
+        return 5
     }
 
 }

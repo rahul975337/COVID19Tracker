@@ -3,19 +3,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rounded_border"
+    android:background="@color/background"
     android:gravity="center"
     tools:context=".Prevention.PreventionFragments.washFragment">
 
-
-    <ImageView
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="450dp"
+        android:layout_height="wrap_content"
         android:layout_margin="40dp"
-        android:elevation="40dp"
-        android:outlineAmbientShadowColor="@color/colorAccent"
         android:background="@drawable/card_shape"
-        android:src="@drawable/ic_washhands"/>
+        android:backgroundTint="@color/listbackground"
+        android:orientation="vertical"
 
+        >
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="@string/handwash_card_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/card_title_text_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="40dp"
+            android:outlineAmbientShadowColor="@color/colorAccent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+
+            android:src="@drawable/ic_wash_hands_new" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="@string/handwash_card_description"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/card_description_text_size"
+            android:textStyle="normal"
+            android:layout_marginBottom="25dp"/>
+    </LinearLayout>
 </RelativeLayout>

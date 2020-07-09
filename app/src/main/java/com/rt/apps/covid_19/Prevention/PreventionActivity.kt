@@ -193,7 +193,7 @@ class PreventionActivity : AppCompatActivity() {
                 supportFragmentManager
             )
         mViewPager.adapter = mPreventionPagerViewAdapter
-        mViewPager.offscreenPageLimit = 8
+        mViewPager.offscreenPageLimit = 5
 
 
 
@@ -233,9 +233,7 @@ class PreventionActivity : AppCompatActivity() {
             distanceBtn.setImageResource(R.drawable.dark_dot)
             coverBtn.setImageResource(R.drawable.dark_dot)
             homeBtn.setImageResource(R.drawable.dark_dot)
-            exerciseBtn.setImageResource(R.drawable.dark_dot)
-            immuneBtn.setImageResource(R.drawable.dark_dot)
-            consultBtn.setImageResource(R.drawable.dark_dot)
+
 
 
         }
@@ -245,9 +243,7 @@ class PreventionActivity : AppCompatActivity() {
             distanceBtn.setImageResource(R.drawable.dark_dot)
             coverBtn.setImageResource(R.drawable.dark_dot)
             homeBtn.setImageResource(R.drawable.dark_dot)
-            exerciseBtn.setImageResource(R.drawable.dark_dot)
-            immuneBtn.setImageResource(R.drawable.dark_dot)
-            consultBtn.setImageResource(R.drawable.dark_dot)
+
 
 
         }
@@ -257,9 +253,7 @@ class PreventionActivity : AppCompatActivity() {
             distanceBtn.setImageResource(R.drawable.glowing_dot)
             coverBtn.setImageResource(R.drawable.dark_dot)
             homeBtn.setImageResource(R.drawable.dark_dot)
-            exerciseBtn.setImageResource(R.drawable.dark_dot)
-            immuneBtn.setImageResource(R.drawable.dark_dot)
-            consultBtn.setImageResource(R.drawable.dark_dot)
+
         }
         if (position == 3) {
             maskBtn.setImageResource(R.drawable.dark_dot)
@@ -267,9 +261,7 @@ class PreventionActivity : AppCompatActivity() {
             distanceBtn.setImageResource(R.drawable.dark_dot)
             coverBtn.setImageResource(R.drawable.glowing_dot)
             homeBtn.setImageResource(R.drawable.dark_dot)
-            exerciseBtn.setImageResource(R.drawable.dark_dot)
-            immuneBtn.setImageResource(R.drawable.dark_dot)
-            consultBtn.setImageResource(R.drawable.dark_dot)
+
         }
         if (position == 4) {
             maskBtn.setImageResource(R.drawable.dark_dot)
@@ -277,40 +269,10 @@ class PreventionActivity : AppCompatActivity() {
             distanceBtn.setImageResource(R.drawable.dark_dot)
             coverBtn.setImageResource(R.drawable.dark_dot)
             homeBtn.setImageResource(R.drawable.glowing_dot)
-            exerciseBtn.setImageResource(R.drawable.dark_dot)
-            immuneBtn.setImageResource(R.drawable.dark_dot)
-            consultBtn.setImageResource(R.drawable.dark_dot)
+
         }
-        if (position == 5) {
-            maskBtn.setImageResource(R.drawable.dark_dot)
-            washBtn.setImageResource(R.drawable.dark_dot)
-            distanceBtn.setImageResource(R.drawable.dark_dot)
-            coverBtn.setImageResource(R.drawable.dark_dot)
-            homeBtn.setImageResource(R.drawable.dark_dot)
-            exerciseBtn.setImageResource(R.drawable.glowing_dot)
-            immuneBtn.setImageResource(R.drawable.dark_dot)
-            consultBtn.setImageResource(R.drawable.dark_dot)
-        }
-        if (position == 6) {
-            maskBtn.setImageResource(R.drawable.dark_dot)
-            washBtn.setImageResource(R.drawable.dark_dot)
-            distanceBtn.setImageResource(R.drawable.dark_dot)
-            coverBtn.setImageResource(R.drawable.dark_dot)
-            homeBtn.setImageResource(R.drawable.dark_dot)
-            exerciseBtn.setImageResource(R.drawable.dark_dot)
-            immuneBtn.setImageResource(R.drawable.glowing_dot)
-            consultBtn.setImageResource(R.drawable.dark_dot)
-        }
-        if (position == 7) {
-            maskBtn.setImageResource(R.drawable.dark_dot)
-            washBtn.setImageResource(R.drawable.dark_dot)
-            distanceBtn.setImageResource(R.drawable.dark_dot)
-            coverBtn.setImageResource(R.drawable.dark_dot)
-            homeBtn.setImageResource(R.drawable.dark_dot)
-            exerciseBtn.setImageResource(R.drawable.dark_dot)
-            immuneBtn.setImageResource(R.drawable.dark_dot)
-            consultBtn.setImageResource(R.drawable.glowing_dot)
-        }
+
+
 
 
     }

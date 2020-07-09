@@ -12,11 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Infected.InfectedActivity"></activity>
+        <activity android:name=".CauseofSpread.CauseActivity"></activity>
+        <activity android:name=".Infected.InfectedActivity" />
         <activity android:name=".Essentials.EssentialActivity" />
         <activity android:name=".About.AboutActivity" />
         <activity android:name=".Symptoms.SymptomActivity" />
-
         <activity android:name=".Prevention.PreventionActivity" />
         <activity android:name=".tracker.MainActivity">
             <intent-filter>

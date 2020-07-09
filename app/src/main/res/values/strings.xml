@@ -9,4 +9,21 @@
     <string name="title_activity_swipe">swipe</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    //////////////////////prevention cards/////////
+    //mask
+    <string name="mask_card_title">"Wear Mask"</string>
+    <string name="mask_card_description">"Wear a mask in public places.\nAvoid touching face,nose and mouth."</string>
+    //hand wash
+    <string name="handwash_card_title">"Wash Hands"</string>
+    <string name="handwash_card_description">"Clean your hands often.\nUse soap and water, or an alcohol-based hand sanitizer."</string>
+    //social distancing
+    <string name="socialdistancing_card_title">"Social Distancing"</string>
+    <string name="socialdistancing_card_description">"Maintain at least 1 metre (3 feet) distance between yourself and others."</string>
+    //cover while sneezing
+    <string name="coverwhilesneezing_card_title">"Cover while sneezing"</string>
+    <string name="coverwhilesneezing_card_description">"Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze."</string>
+    //Stay at home
+    <string name="stayhome_card_title">"Stay at home"</string>
+    <string name="stayhome_card_description">"Stay at home.\nAvoid going to crowded places.\nSelf-isolate yourself even with minor symptoms."</string>
 </resources>
+
