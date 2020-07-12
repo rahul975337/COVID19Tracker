@@ -8,14 +8,12 @@ import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.rt.apps.covid_19.About.AboutActivity
-import com.rt.apps.covid_19.Infected.InfectedActivity
 import com.rt.apps.covid_19.Prevention.PreventionActivity
 import com.rt.apps.covid_19.R
 import com.rt.apps.covid_19.Symptoms.SymptomActivity
 import com.rt.apps.covid_19.tracker.MainActivity
 import kotlinx.android.synthetic.main.activity_main.About_fab
 import kotlinx.android.synthetic.main.activity_main.Essentials_fab
-import kotlinx.android.synthetic.main.activity_main.Infected_fab
 import kotlinx.android.synthetic.main.activity_main.Prevention_fab
 import kotlinx.android.synthetic.main.activity_main.Symptoms_fab
 import kotlinx.android.synthetic.main.activity_main.Tracker_fab
@@ -61,30 +59,31 @@ class EssentialActivity : AppCompatActivity() {
                 Symptoms_fab.startAnimation(fabClose)
                 About_fab.startAnimation(fabClose)
                 Prevention_fab.startAnimation(fabClose)
-                Infected_fab.startAnimation(fabClose)
+
 
                 //visibility//
                 Tracker_fab.visibility = View.INVISIBLE
                 Symptoms_fab.visibility = View.INVISIBLE
                 About_fab.visibility = View.INVISIBLE
                 Prevention_fab.visibility = View.INVISIBLE
-                Infected_fab.visibility = View.INVISIBLE
+
                 //clickable
 
                 Tracker_fab.isClickable = false
                 Symptoms_fab.isClickable = false
                 About_fab.isClickable = false
                 Prevention_fab.isClickable = false
-                Infected_fab.isClickable = false
+
                 //disabling when fab close
 
                 Tracker_fab.isEnabled = false
                 Symptoms_fab.isEnabled = false
                 About_fab.isEnabled = false
                 Prevention_fab.isEnabled = false
-                Infected_fab.isEnabled = false
+
 
                 Essentials_fab.startAnimation(fabRClockwise)
+                lin.visibility = View.VISIBLE
                 isOpen = false
 
             } else {
@@ -94,7 +93,7 @@ class EssentialActivity : AppCompatActivity() {
                 Symptoms_fab.startAnimation(fabOpen)
                 About_fab.startAnimation(fabOpen)
                 Prevention_fab.startAnimation(fabOpen)
-                Infected_fab.startAnimation(fabOpen)
+
                 Essentials_fab.startAnimation(fabRAntiClockwise)
                 ////
 
@@ -102,21 +101,21 @@ class EssentialActivity : AppCompatActivity() {
                 Symptoms_fab.visibility = View.VISIBLE
                 About_fab.visibility = View.VISIBLE
                 Prevention_fab.visibility = View.VISIBLE
-                Infected_fab.visibility = View.VISIBLE
+
                 //
 
                 Tracker_fab.isClickable = true
                 Symptoms_fab.isClickable = true
                 About_fab.isClickable = true
                 Prevention_fab.isClickable = true
-                Infected_fab.isClickable = true
+
                 ///////////
 
                 Tracker_fab.isEnabled = true
                 Symptoms_fab.isEnabled = true
                 About_fab.isEnabled = true
                 Prevention_fab.isEnabled = true
-                Infected_fab.isEnabled = true
+                lin.visibility = View.GONE
                 isOpen = true
             }
             Tracker_fab.setOnClickListener {
@@ -135,10 +134,7 @@ class EssentialActivity : AppCompatActivity() {
                 val intent = Intent(this, PreventionActivity::class.java)
                 startActivity(intent)
             }
-            Infected_fab.setOnClickListener {
-                val intent = Intent(this, InfectedActivity::class.java)
-                startActivity(intent)
-            }
+
         }
 /////////////////////
         ///////////////////////////////

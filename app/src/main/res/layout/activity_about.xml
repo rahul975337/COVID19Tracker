@@ -7,6 +7,12 @@
     tools:context=".About.AboutActivity"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/aViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
     <androidx.coordinatorlayout.widget.CoordinatorLayout
 
         android:layout_width="match_parent"
@@ -29,20 +35,7 @@
             app:icon="@drawable/ic_virus"
             app:rippleColor="@color/deceased" />
 
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/Infected_fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="80dp"
-            android:elevation="30dp"
-            android:visibility="invisible"
-            android:textAllCaps="false"
-            app:rippleColor="@color/deceased"
-            android:contentDescription="fab"
-            android:text="Infected?"
-            app:icon="@drawable/ic_girl" />
+
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/Essentials_fab"
@@ -50,7 +43,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="134dp"
+            android:layout_marginBottom="80dp"
+
             android:contentDescription="fab"
             android:elevation="30dp"
             android:text="Essentials"
@@ -64,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="188dp"
+            android:layout_marginBottom="134dp"
             android:contentDescription="fab"
             android:elevation="30dp"
             android:text="Prevention"
@@ -78,7 +72,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="242dp"
+            android:layout_marginBottom="188dp"
+
             android:contentDescription="fab"
             android:elevation="30dp"
             android:text="Symptoms"
@@ -92,14 +87,72 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="296dp"
+            android:layout_marginBottom="242dp"
+
             android:contentDescription="fab"
             android:elevation="30dp"
-            android:text="Tracker Covid-19"
+            android:text="Tracker"
             android:textAllCaps="false"
             android:visibility="invisible"
             app:icon="@drawable/ic_virus"
             app:rippleColor="@color/deceased" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bottom_bar_shape"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/covidBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:padding="2dp"
+
+            android:src="@drawable/dark_dot" />
+
+
+        <ImageButton
+            android:id="@+id/protectYourselfBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@color/background"
+
+            android:padding="2dp"
+
+            android:src="@drawable/dark_dot" />
+        <ImageButton
+            android:id="@+id/causeOfSpreadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:padding="2dp"
+
+            android:src="@drawable/dark_dot" />
+        <ImageButton
+            android:id="@+id/treatmentBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:padding="2dp"
+
+            android:src="@drawable/dark_dot" />
+
+
+
+
+
+
+    </LinearLayout>
   </RelativeLayout>

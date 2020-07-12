@@ -6,7 +6,6 @@ import androidx.fragment.app.FragmentPagerAdapter
 import com.rt.apps.covid_19.Essentials.EssentialsFragments.GeneralFragment
 import com.rt.apps.covid_19.Essentials.EssentialsFragments.MarketFragment
 import com.rt.apps.covid_19.Essentials.EssentialsFragments.MedicalFragment
-import com.rt.apps.covid_19.Prevention.PreventionFragments.*
 
 
 internal class EssentialPagerViewAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm!!) {

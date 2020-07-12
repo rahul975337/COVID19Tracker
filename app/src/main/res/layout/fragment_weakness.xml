@@ -4,17 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-
-    tools:context=".Prevention.PreventionFragments.MaskFragment">
-
-
+    android:gravity="center"
+    tools:context=".Symptoms.SymptomFragments.SoreThroatFragment">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:background="@drawable/card_shape"
         android:backgroundTint="@color/listbackground"
         android:orientation="vertical"
@@ -26,7 +22,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:text="@string/mask_card_title"
+            android:padding="5dp"
+            android:text="Weakness"
             android:textColor="@color/white"
             android:textSize="@dimen/card_title_text_size"
             android:textStyle="bold" />
@@ -34,27 +31,26 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:elevation="40dp"
             android:outlineAmbientShadowColor="@color/colorAccent"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
+            android:padding="20dp"
 
-            android:src="@drawable/ic_wear_mask_new" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="@string/mask_card_description"
-            android:textColor="@color/white"
-            android:textSize="@dimen/card_description_text_size"
-            android:textStyle="normal"
-            android:layout_marginBottom="25dp"/>
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:src="@drawable/ic_weakness" />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:text="@string/coverwhilesneezing_card_description"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/card_description_text_size"-->
+<!--            android:textStyle="normal"-->
+<!--            android:layout_marginBottom="25dp"/>-->
     </LinearLayout>
-
-
-
 
 </RelativeLayout>

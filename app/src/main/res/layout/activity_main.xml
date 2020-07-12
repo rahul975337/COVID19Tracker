@@ -279,27 +279,14 @@
                 android:layout_margin="16dp"
                 android:layout_gravity="bottom|end"
                 android:elevation="30dp"
+                android:backgroundTint="@color/recovered"
 
                 android:contentDescription="fab"
 
                 android:textAllCaps="false"
-                app:icon="@drawable/ic_virus"
+                app:icon="@drawable/ic_covid_fab"
                 app:rippleColor="@color/deceased" />
 
-            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                android:id="@+id/Infected_fab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="80dp"
-                android:elevation="30dp"
-                android:visibility="invisible"
-                android:textAllCaps="false"
-                app:rippleColor="@color/deceased"
-                android:contentDescription="fab"
-                android:text="Infected?"
-                app:icon="@drawable/ic_girl" />
 
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
                 android:id="@+id/Essentials_fab"
@@ -307,7 +294,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:layout_marginRight="16dp"
-                android:layout_marginBottom="134dp"
+                android:layout_marginBottom="80dp"
+
                 android:contentDescription="fab"
                 android:elevation="30dp"
                 android:text="Essentials"
@@ -315,13 +303,15 @@
                 android:visibility="invisible"
                 app:icon="@drawable/ic_virus"
                 app:rippleColor="@color/deceased" />
+
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
                 android:id="@+id/Prevention_fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:layout_marginRight="16dp"
-                android:layout_marginBottom="188dp"
+                android:layout_marginBottom="134dp"
+
                 android:contentDescription="fab"
                 android:elevation="30dp"
                 android:text="Prevention"
@@ -329,33 +319,38 @@
                 android:visibility="invisible"
                 app:icon="@drawable/ic_virus"
                 app:rippleColor="@color/deceased" />
+
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
                 android:id="@+id/Symptoms_fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:layout_marginRight="16dp"
-                android:layout_marginBottom="242dp"
+                android:layout_marginBottom="188dp"
+                app:icon="@drawable/ic_symptoms_fab"
                 android:contentDescription="fab"
                 android:elevation="30dp"
                 android:text="Symptoms"
                 android:textAllCaps="false"
                 android:visibility="invisible"
-                app:icon="@drawable/ic_virus"
+                app:iconTint="@color/recovered"
+
                 app:rippleColor="@color/deceased" />
+
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
                 android:id="@+id/About_fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:layout_marginRight="16dp"
-                android:layout_marginBottom="296dp"
+                android:layout_marginBottom="242dp"
+
                 android:contentDescription="fab"
                 android:elevation="30dp"
-                android:text="About_Covid-19"
+                android:text="Covid-19"
                 android:textAllCaps="false"
                 android:visibility="invisible"
-                app:icon="@drawable/ic_virus"
+                app:icon="@drawable/ic_colorful_mask"
                 app:rippleColor="@color/deceased" />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>

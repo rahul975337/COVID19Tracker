@@ -25,5 +25,13 @@
     //Stay at home
     <string name="stayhome_card_title">"Stay at home"</string>
     <string name="stayhome_card_description">"Stay at home.\nAvoid going to crowded places.\nSelf-isolate yourself even with minor symptoms."</string>
+    ///////////////////////////////////////////
+    //////////About covid 19///////////
+    <string name="what_is_covid">"Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.\nMost people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment. Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness."</string>
+    <string name="how_to_protect_yourself_from_covid19">"The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face."</string>
+    <string name="cause_of_spread">"The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow)."</string>
+    <string name="treatment_for_covid">"At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. WHO will continue to provide updated information as soon as clinical findings become available.""</string>
+
+
 </resources>
 

@@ -5,56 +5,48 @@
     android:layout_height="match_parent"
     android:background="@color/background"
 
-    tools:context=".Prevention.PreventionFragments.MaskFragment">
-
+    tools:context=".About.AboutFragments.protectYourselfFromCovidFragment">
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/card_shape"
         android:backgroundTint="@color/listbackground"
-        android:orientation="vertical"
-
-        >
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:text="@string/mask_card_title"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="How to protect yourself from Covid-19?"
             android:textColor="@color/white"
-            android:textSize="@dimen/card_title_text_size"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="40dp"
-            android:outlineAmbientShadowColor="@color/colorAccent"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
 
-            android:src="@drawable/ic_wear_mask_new" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:layout_marginLeft="15dp"
 
             android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="@string/mask_card_description"
+            android:layout_marginBottom="25dp"
+            android:padding="5dp"
+            android:text="@string/how_to_protect_yourself_from_covid19"
             android:textColor="@color/white"
-            android:textSize="@dimen/card_description_text_size"
-            android:textStyle="normal"
-            android:layout_marginBottom="25dp"/>
+            android:textSize="20sp"
+            android:textStyle="normal" />
     </LinearLayout>
-
-
 
 
 </RelativeLayout>
