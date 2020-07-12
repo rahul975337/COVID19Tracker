@@ -12,19 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CauseofSpread.CauseActivity"></activity>
-        <activity android:name=".Infected.InfectedActivity" />
+
         <activity android:name=".Essentials.EssentialActivity" />
         <activity android:name=".About.AboutActivity" />
         <activity android:name=".Symptoms.SymptomActivity" />
         <activity android:name=".Prevention.PreventionActivity" />
-        <activity android:name=".tracker.MainActivity">
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".tracker.MainActivity">
+        </activity>
+
 
         <meta-data
             android:name="preloaded_fonts"
