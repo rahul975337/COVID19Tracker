@@ -6,7 +6,7 @@
     <color name="white">#FFFFFF</color>
 
     ////
-    <color name="recovered"> #F65164</color>
+    <color name="recovered"> #DF4E59</color>
     <color name="confirmed"> #4E7CFF</color>
     <color name="deceased"> #7A1C7B</color>
     <color name="active"> #7033FF </color>
@@ -24,5 +24,8 @@
     <color name="trans_turq">#75FF5722</color>
     ///
     <color name="card_background">@color/white</color>
+    //fab_colors
+    <color name="fab_main">#F58A97</color>
+    <color name="fab_extras">#FCDED1</color>
 
 </resources>

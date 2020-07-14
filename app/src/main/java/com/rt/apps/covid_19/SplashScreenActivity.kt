@@ -17,6 +17,7 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
         mDelayHandler = Handler()
+
         //Navigate with delay
         mDelayHandler!!.postDelayed(mRunnable, SPLASH_DELAY)
     }
@@ -48,9 +49,10 @@ class SplashScreenActivity : AppCompatActivity() {
 
                 // Updating the progress bar
                 splash_screen_progress_bar.progress = progressBarStatus
+
             }
 
-            //splash_screen_progress_bar.setProgress(10)
+            //plash_screen_progress_bar.setProgress(10)
 
             launchMainActivity()
 

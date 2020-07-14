@@ -19,7 +19,9 @@
         <RelativeLayout
             android:id="@+id/topcover"
             android:layout_width="match_parent"
-            android:background="@drawable/trapshape"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bottom_bar_shape"
+
             android:layout_height="wrap_content">
 
             <TextView
@@ -87,7 +89,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
-                    android:backgroundTint="@color/confirmed"
+                    android:backgroundTint="@color/listbackground"
                     android:orientation="vertical">
 
                     <TextView
@@ -96,7 +98,7 @@
                         android:text="Confirmed"
                         android:textAllCaps="true"
 
-                        android:textColor="@color/white"
+                        android:textColor="@color/confirmed"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -104,8 +106,8 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="4dp"
-                        android:src="@drawable/ic_virus"
-                        android:tint="#fff" />
+                        android:src="@drawable/ic_corona_virus"
+                        android:tint="@color/confirmed" />
 
                     <TextView
                         android:id="@+id/confirmedTv"
@@ -114,7 +116,7 @@
                         android:layout_marginTop="8dp"
                         android:textAllCaps="true"
 
-                        android:textColor="@color/white"
+                        android:textColor="@color/confirmed"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -125,7 +127,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/active"
+                    android:backgroundTint="@color/listbackground"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
@@ -137,7 +139,7 @@
                         android:layout_height="wrap_content"
                         android:text=" Active  "
                         android:textAllCaps="true"
-                        android:textColor="@color/white"
+                        android:textColor="@color/active"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -146,7 +148,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="4dp"
                         android:src="@drawable/ic_patient"
-                        android:tint="@color/white" />
+                        android:tint="@color/active" />
 
                     <TextView
                         android:id="@+id/activeTv"
@@ -154,7 +156,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:textAllCaps="true"
-                        android:textColor="@color/white"
+                        android:textColor="@color/active"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -176,7 +178,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
-                    android:backgroundTint="@color/recovered"
+                    android:backgroundTint="@color/listbackground"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
@@ -188,7 +190,7 @@
                         android:layout_height="wrap_content"
                         android:text="Recovered"
                         android:textAllCaps="true"
-                        android:textColor="@color/white"
+                        android:textColor="@color/recovered"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -197,7 +199,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="4dp"
                         android:src="@drawable/ic_heart"
-                        android:tint="@color/white" />
+                        android:tint="@color/recovered" />
 
                     <TextView
                         android:id="@+id/recoveredTv"
@@ -205,7 +207,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:textAllCaps="true"
-                        android:textColor="@color/white"
+                        android:textColor="@color/recovered"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -219,7 +221,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
-                    android:backgroundTint="@color/deceased"
+                    android:backgroundTint="@color/listbackground"
                     android:orientation="vertical">
 
                     <TextView
@@ -227,7 +229,7 @@
                         android:layout_height="wrap_content"
                         android:text="Deceased "
                         android:textAllCaps="true"
-                        android:textColor="@color/white"
+                        android:textColor="@color/deceased"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -236,7 +238,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="4dp"
                         android:src="@drawable/ic_death"
-                        android:tint="@color/white" />
+                        android:tint="@color/deceased" />
 
                     <TextView
                         android:id="@+id/deceasedTv"
@@ -244,7 +246,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:textAllCaps="true"
-                        android:textColor="@color/white"
+                        android:textColor="@color/deceased"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -279,12 +281,12 @@
                 android:layout_margin="16dp"
                 android:layout_gravity="bottom|end"
                 android:elevation="30dp"
-                android:backgroundTint="@color/recovered"
 
+                android:backgroundTint="@color/fab_main"
                 android:contentDescription="fab"
 
                 android:textAllCaps="false"
-                app:icon="@drawable/ic_covid_fab"
+                app:icon="@drawable/ic_virus"
                 app:rippleColor="@color/deceased" />
 
 
@@ -295,13 +297,14 @@
                 android:layout_gravity="bottom|end"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="80dp"
-
+                android:backgroundTint="@color/fab_extras"
                 android:contentDescription="fab"
                 android:elevation="30dp"
                 android:text="Essentials"
                 android:textAllCaps="false"
                 android:visibility="invisible"
-                app:icon="@drawable/ic_virus"
+                app:icon="@drawable/ic_essentials"
+
                 app:rippleColor="@color/deceased" />
 
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -311,13 +314,13 @@
                 android:layout_gravity="bottom|end"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="134dp"
-
+                android:backgroundTint="@color/fab_extras"
                 android:contentDescription="fab"
                 android:elevation="30dp"
                 android:text="Prevention"
                 android:textAllCaps="false"
                 android:visibility="invisible"
-                app:icon="@drawable/ic_virus"
+                app:icon="@drawable/ic_prevention"
                 app:rippleColor="@color/deceased" />
 
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -327,13 +330,13 @@
                 android:layout_gravity="bottom|end"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="188dp"
-                app:icon="@drawable/ic_symptoms_fab"
+                android:backgroundTint="@color/fab_extras"
                 android:contentDescription="fab"
                 android:elevation="30dp"
                 android:text="Symptoms"
                 android:textAllCaps="false"
                 android:visibility="invisible"
-                app:iconTint="@color/recovered"
+                app:icon="@drawable/ic_symptoms"
 
                 app:rippleColor="@color/deceased" />
 
@@ -344,13 +347,13 @@
                 android:layout_gravity="bottom|end"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="242dp"
-
+                android:backgroundTint="@color/fab_extras"
                 android:contentDescription="fab"
                 android:elevation="30dp"
                 android:text="Covid-19"
                 android:textAllCaps="false"
                 android:visibility="invisible"
-                app:icon="@drawable/ic_colorful_mask"
+                app:icon="@drawable/ic_corona_virus"
                 app:rippleColor="@color/deceased" />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>

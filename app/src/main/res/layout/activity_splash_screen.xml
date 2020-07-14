@@ -3,33 +3,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background">
+<!--<ImageView-->
+<!--    android:layout_width="match_parent"-->
+
+<!--    android:layout_height="match_parent"-->
+
+<!--    android:src="@color/trans_skyblue" />-->
 
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:src="@mipmap/ic_launcher" />
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_corona_virus"
+        android:tint="#F58A97" />
 
     <TextView
-        android:id="@+id/appName"
-        android:layout_width="fill_parent"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imgLogo"
-        android:layout_marginBottom="10dp"
-        android:gravity="center_horizontal"
-        android:padding="10dp"
-        android:text="@string/app_name"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerInParent="true"
+android:layout_marginTop="10dp"
+        android:text=" Covid-19 Tracker"
         android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:textSize="20sp" />
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:text="Developed by Rahul Tilwani"
+        android:textAlignment="center"
+        android:textColor="#97FFFFFF" />
+
 
     <ProgressBar
         android:id="@+id/splash_screen_progress_bar"
-        style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
-        android:progressTint="#6995c1" />
+        android:indeterminateDrawable="@drawable/progresscolor"
+        />
 </RelativeLayout>
