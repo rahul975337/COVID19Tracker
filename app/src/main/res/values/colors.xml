@@ -25,7 +25,7 @@
     ///
     <color name="card_background">@color/white</color>
     //fab_colors
-    <color name="fab_main">#F58A97</color>
-    <color name="fab_extras">#FCDED1</color>
+    <color name="fab_main">#FCDED1</color>
+    <color name="fab_extras">#FFFFFF</color>
 
 </resources>

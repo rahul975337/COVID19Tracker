@@ -20,7 +20,7 @@
             android:id="@+id/topcover"
             android:layout_width="match_parent"
             android:layout_marginBottom="20dp"
-            android:background="@drawable/bottom_bar_shape"
+            android:background="@drawable/trapshape"
 
             android:layout_height="wrap_content">
 
@@ -89,7 +89,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
-                    android:backgroundTint="@color/listbackground"
+                    android:backgroundTint="@color/confirmed"
                     android:orientation="vertical">
 
                     <TextView
@@ -98,7 +98,7 @@
                         android:text="Confirmed"
                         android:textAllCaps="true"
 
-                        android:textColor="@color/confirmed"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -107,7 +107,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="4dp"
                         android:src="@drawable/ic_corona_virus"
-                        android:tint="@color/confirmed" />
+                        android:tint="#fff" />
 
                     <TextView
                         android:id="@+id/confirmedTv"
@@ -116,7 +116,7 @@
                         android:layout_marginTop="8dp"
                         android:textAllCaps="true"
 
-                        android:textColor="@color/confirmed"
+                        android:textColor="@color/white"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -127,7 +127,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/listbackground"
+                    android:backgroundTint="@color/active"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
@@ -139,7 +139,7 @@
                         android:layout_height="wrap_content"
                         android:text=" Active  "
                         android:textAllCaps="true"
-                        android:textColor="@color/active"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -148,7 +148,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="4dp"
                         android:src="@drawable/ic_patient"
-                        android:tint="@color/active" />
+                        android:tint="@color/white" />
 
                     <TextView
                         android:id="@+id/activeTv"
@@ -156,7 +156,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:textAllCaps="true"
-                        android:textColor="@color/active"
+                        android:textColor="@color/white"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -178,7 +178,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
-                    android:backgroundTint="@color/listbackground"
+                    android:backgroundTint="@color/recovered"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
@@ -190,7 +190,7 @@
                         android:layout_height="wrap_content"
                         android:text="Recovered"
                         android:textAllCaps="true"
-                        android:textColor="@color/recovered"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -199,7 +199,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="4dp"
                         android:src="@drawable/ic_heart"
-                        android:tint="@color/recovered" />
+                        android:tint="@color/white" />
 
                     <TextView
                         android:id="@+id/recoveredTv"
@@ -207,7 +207,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:textAllCaps="true"
-                        android:textColor="@color/recovered"
+                        android:textColor="@color/white"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -221,7 +221,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/rounded_border"
                     android:gravity="center"
-                    android:backgroundTint="@color/listbackground"
+                    android:backgroundTint="@color/deceased"
                     android:orientation="vertical">
 
                     <TextView
@@ -229,7 +229,7 @@
                         android:layout_height="wrap_content"
                         android:text="Deceased "
                         android:textAllCaps="true"
-                        android:textColor="@color/deceased"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -238,7 +238,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="4dp"
                         android:src="@drawable/ic_death"
-                        android:tint="@color/deceased" />
+                        android:tint="@color/white" />
 
                     <TextView
                         android:id="@+id/deceasedTv"
@@ -246,7 +246,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:textAllCaps="true"
-                        android:textColor="@color/deceased"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 

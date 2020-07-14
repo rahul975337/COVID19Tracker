@@ -15,5 +15,5 @@
         android:left="10dp"
         android:right="10dp"
         android:top="7dp" />
-    <solid android:color="@color/background" />
+    <solid android:color="#000" />
 </shape>
