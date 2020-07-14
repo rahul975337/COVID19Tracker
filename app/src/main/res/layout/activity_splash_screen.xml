@@ -5,19 +5,13 @@
     android:background="@color/background">
 
 
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerInParent="true"
-        android:scaleType="fitXY"
-        android:src="@drawable/covidicon" />
+
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imgLogo"
+        android:layout_below="@id/splash_screen_progress_bar"
         android:layout_centerInParent="true"
         android:layout_marginTop="10dp"
         android:text=" Covid-19 Tracker"
@@ -39,11 +33,12 @@
     <ProgressBar
         android:id="@+id/splash_screen_progress_bar"
         style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_centerInParent="true"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+
+        android:layout_height="150dp"
+
         android:foregroundGravity="center"
         android:layout_margin="20dp"
-        android:indeterminateDrawable="@drawable/progresscolor" />
+        android:indeterminateDrawable="@drawable/my_progress_indeterminate" />
 </RelativeLayout>
