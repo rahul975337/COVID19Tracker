@@ -6,26 +6,22 @@
     <color name="white">#FFFFFF</color>
 
     ////
-    <color name="recovered"> #DF4E59</color>
-    <color name="confirmed"> #4E7CFF</color>
-    <color name="deceased"> #7A1C7B</color>
-    <color name="active"> #7033FF </color>
+    <color name="recovered">#DF4E59</color>
+    <color name="confirmed">#4E7CFF</color>
+    <color name="deceased">#7A1C7B</color>
+    <color name="active">#7033FF</color>
     <color name="background">#070912</color>
     <color name="listbackground">#181C27</color>
+    <color name="uppercontainerbackground">#070912</color>
+
 
     // light colors
     //four bg card color
 
-    <color name="trans_green">#7525D366</color>
-    <color name="trans_yellow">#75FFD337</color>
-    <color name="trans_violet">#75082DEF</color>
-    <color name="trans_skyblue">#7508EFE1</color>
-    <color name="trans_red">#75CC0000</color>
-    <color name="trans_turq">#75FF5722</color>
     ///
     <color name="card_background">@color/white</color>
     //fab_colors
-    <color name="fab_main">#FCDED1</color>
-    <color name="fab_extras">#FFFFFF</color>
+    <color name="fab_main">#DF4E59</color>
+    <color name="fab_extras">#CC070912</color>
 
 </resources>

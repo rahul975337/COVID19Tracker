@@ -36,7 +36,7 @@
 
             android:textAllCaps="false"
             app:icon="@drawable/ic_essentials"
-            app:rippleColor="@color/deceased" />
+             app:rippleColor="@color/recovered" />
 
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -46,6 +46,9 @@
             android:layout_gravity="bottom|end"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="80dp"
+            android:textColor="@color/white"
+
+            app:iconTint="@color/recovered"
             android:backgroundTint="@color/fab_extras"
             android:contentDescription="fab"
             android:elevation="30dp"
@@ -53,12 +56,16 @@
             android:textAllCaps="false"
             android:visibility="invisible"
             app:icon="@drawable/ic_corona_virus"
-            app:rippleColor="@color/deceased" />
+             app:rippleColor="@color/recovered" />
+
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/Prevention_fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
+            android:textColor="@color/white"
+
+            app:iconTint="@color/recovered"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="134dp"
             android:backgroundTint="@color/fab_extras"
@@ -68,11 +75,15 @@
             android:textAllCaps="false"
             android:visibility="invisible"
             app:icon="@drawable/ic_prevention"
-            app:rippleColor="@color/deceased" />
+             app:rippleColor="@color/recovered" />
+
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/Symptoms_fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+
+            app:iconTint="@color/recovered"
             android:layout_gravity="bottom|end"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="188dp"
@@ -83,9 +94,13 @@
             android:textAllCaps="false"
             android:visibility="invisible"
             app:icon="@drawable/ic_symptoms"
-            app:rippleColor="@color/deceased" />
+             app:rippleColor="@color/recovered" />
+
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/Tracker_fab"
+            android:textColor="@color/white"
+
+            app:iconTint="@color/recovered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
@@ -98,7 +113,7 @@
             android:textAllCaps="false"
             android:visibility="invisible"
             app:icon="@drawable/ic_virus"
-            app:rippleColor="@color/deceased" />
+             app:rippleColor="@color/recovered" />
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
