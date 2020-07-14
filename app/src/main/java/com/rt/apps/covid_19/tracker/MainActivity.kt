@@ -48,13 +48,13 @@ class MainActivity : AppCompatActivity() {
             R.anim.rotate_anticlockwise
         )
         //////setting up fab////
+
         Tracker_fab.setOnClickListener {
             if (isOpen) {
                 About_fab.startAnimation(fabClose)
                 Symptoms_fab.startAnimation(fabClose)
                 Essentials_fab.startAnimation(fabClose)
                 Prevention_fab.startAnimation(fabClose)
-
                     //visibility//
                     About_fab.visibility = View.INVISIBLE
                     Symptoms_fab.visibility = View.INVISIBLE

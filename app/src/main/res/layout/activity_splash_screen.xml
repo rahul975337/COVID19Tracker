@@ -3,12 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background">
-<!--<ImageView-->
-<!--    android:layout_width="match_parent"-->
 
-<!--    android:layout_height="match_parent"-->
-
-<!--    android:src="@color/trans_skyblue" />-->
 
     <ImageView
         android:id="@+id/imgLogo"
