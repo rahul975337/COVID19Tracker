@@ -1,0 +1,114 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+  <group android:scaleX="1.0591544"
+      android:scaleY="1.0591544"
+      android:translateX="20.10706"
+      android:translateY="20.10706">
+    <path
+        android:pathData="m33,7.816a3,3 0,1 0,-2 0v3.184h2zM32,4a1,1 0,1 1,-1 1,1 1,0 0,1 1,-1z">
+      <aapt:attr name="android:fillColor">
+        <gradient 
+            android:endX="32"
+            android:endY="3.145"
+            android:startX="32"
+            android:startY="63.213"
+            android:type="linear">
+          <item android:color="#FF006DF0" android:offset="0"/>
+          <item android:color="#FF00E7F0" android:offset="1"/>
+        </gradient>
+      </aapt:attr>
+    </path>
+    <path
+        android:pathData="m52.949,33h3.235a3,3 0,1 0,0 -2h-3.235a20.805,20.805 0,0 0,-2.3 -8.612l5.391,-3.113a2.971,2.971 0,0 0,3.44 0.323,3.01 3.01,0 1,0 -4.44,-2.055l-5.394,3.114a21.151,21.151 0,0 0,-6.3 -6.3l1.12,-1.94a2.851,2.851 0,0 0,3.136 -1.43,3 3,0 1,0 -4.873,0.439l-1.114,1.929a20.829,20.829 0,0 0,-19.224 0l-1.114,-1.928a3.295,3.295 0,1 0,-1.737 0.992l1.12,1.94a21.139,21.139 0,0 0,-6.3 6.3l-5.4,-3.115a3.042,3.042 0,1 0,-1.01 1.726l5.4,3.118a20.805,20.805 0,0 0,-2.299 8.612h-3.235a3,3 0,1 0,0 2h3.235a20.805,20.805 0,0 0,2.3 8.612l-5.393,3.114a3,3 0,1 0,1 1.732l5.4,-3.115a21.139,21.139 0,0 0,6.3 6.3l-1.115,1.932a3,3 0,1 0,1.732 1l1.114,-1.928a20.824,20.824 0,0 0,8.611 2.302v3.235a3,3 0,1 0,2 0v-3.235a20.809,20.809 0,0 0,8.612 -2.3l1.114,1.929a3,3 0,0 0,-0.325 3.438,3 3,0 1,0 2.058,-4.438l-1.116,-1.933a21.151,21.151 0,0 0,6.3 -6.3l5.394,3.114a2.967,2.967 0,0 0,1.443 3.141,3.01 3.01,0 1,0 -0.44,-4.873l-5.391,-3.113a20.805,20.805 0,0 0,2.3 -8.614zM57.015,16.741a1,1 0,1 1,1.465 1.125,1 1,0 0,1 -1.365,-0.366 0.988,0.988 0,0 1,-0.1 -0.759zM44.134,8.984a1,1 0,1 1,0.366 1.365,1 1,0 0,1 -0.366,-1.365zM18.134,9.984a1,1 0,1 1,1.366 0.366,1 1,0 0,1 -1.366,-0.367zM6.885,17.5a1,1 0,1 1,-0.366 -1.366,1 1,0 0,1 0.366,1.366zM6.519,47.866a1,1 0,1 1,-1 -1.732,1 1,0 1,1 1,1.732zM19.866,55.017a1,1 0,1 1,-0.865 -1.5,1 1,0 0,1 0.865,1.5zM45.866,54.017a1,1 0,1 1,-1.366 -0.365,1 1,0 0,1 1.366,0.364zM57.115,46.5a1,1 0,1 1,-0.1 0.759,1 1,0 0,1 0.1,-0.759zM59,31a1,1 0,1 1,-1 1,1 1,0 0,1 1,-1zM5,33a1,1 0,1 1,1 -1,1 1,0 0,1 -1,1zM32,60a1,1 0,1 1,1 -1,1 1,0 0,1 -1,1zM42.344,47.916 L39.866,43.625a1,1 0,1 0,-1.732 1l2.477,4.29a18.824,18.824 0,0 1,-17.222 0l2.477,-4.29a1,1 0,1 0,-1.732 -1l-2.478,4.291a18.983,18.983 0,0 1,-8.605 -14.916h2.949a1,1 0,0 0,0 -2h-2.949a18.983,18.983 0,0 1,8.6 -14.916l2.478,4.291a1,1 0,1 0,1.732 -1l-2.477,-4.29a18.824,18.824 0,0 1,17.222 0l-2.477,4.29a1,1 0,1 0,1.732 1l2.478,-4.291a18.983,18.983 0,0 1,8.61 14.916h-4.949a1,1 0,0 0,0 2h4.949a18.983,18.983 0,0 1,-8.605 14.916z">
+      <aapt:attr name="android:fillColor">
+        <gradient 
+            android:endX="32"
+            android:endY="3.145"
+            android:startX="32"
+            android:startY="63.213"
+            android:type="linear">
+          <item android:color="#FF006DF0" android:offset="0"/>
+          <item android:color="#FF00E7F0" android:offset="1"/>
+        </gradient>
+      </aapt:attr>
+    </path>
+    <path
+        android:pathData="m29,27a3,3 0,1 0,-3 -3,3 3,0 0,0 3,3zM29,23a1,1 0,1 1,-1 1,1 1,0 0,1 1,-1z">
+    </path>
+    <path
+        android:pathData="m25,31a3,3 0,1 0,-3 3,3 3,0 0,0 3,-3zM22,32a1,1 0,1 1,1 -1,1 1,0 0,1 -1,1z">
+    </path>
+    <path
+        android:pathData="m30,37a3,3 0,1 0,3 3,3 3,0 0,0 -3,-3zM30,41a1,1 0,1 1,1 -1,1 1,0 0,1 -1,1z">
+    </path>
+    <path
+        android:pathData="m43,37a3,3 0,1 0,-3 3,3 3,0 0,0 3,-3zM40,38a1,1 0,1 1,1 -1,1 1,0 0,1 -1,1z">
+    </path>
+    <path
+        android:pathData="m29,32a3,3 0,1 0,3 -3,3 3,0 0,0 -3,3zM33,32a1,1 0,1 1,-1 -1,1 1,0 0,1 1,1z">
+      <aapt:attr name="android:fillColor">
+        <gradient 
+            android:endX="32"
+            android:endY="3.145"
+            android:startX="32"
+            android:startY="63.213"
+            android:type="linear">
+          <item android:color="#FF006DF0" android:offset="0"/>
+          <item android:color="#FF00E7F0" android:offset="1"/>
+        </gradient>
+      </aapt:attr>
+    </path>
+    <path
+        android:pathData="m39,29a3,3 0,1 0,-3 -3,3 3,0 0,0 3,3zM39,25a1,1 0,1 1,-1 1,1 1,0 0,1 1,-1z">
+    </path>
+    <path
+        android:pathData="m45.293,27.707 l1,1a1,1 0,0 0,1.414 -1.414l-1,-1a1,1 0,0 0,-1.414 1.414z">
+    </path>
+    <path
+        android:pathData="m44.707,20.293a1,1 0,0 0,-1.414 0l-1,1a1,1 0,1 0,1.414 1.414l1,-1a1,1 0,0 0,0 -1.414z">
+    </path>
+    <path
+        android:pathData="m36,40a1,1 0,0 0,-1 1v1a1,1 0,0 0,2 0v-1a1,1 0,0 0,-1 -1z">
+    </path>
+    <path
+        android:pathData="m21,40a1,1 0,0 0,-1 1v1a1,1 0,0 0,2 0v-1a1,1 0,0 0,-1 -1z">
+    </path>
+    <path
+        android:pathData="m20.293,23.707a1,1 0,0 0,1.414 -1.414l-1,-1a1,1 0,0 0,-1.414 1.414z">
+    </path>
+    <path
+        android:pathData="m29,45a1,1 0,0 0,-1 1v1a1,1 0,0 0,2 0v-1a1,1 0,0 0,-1 -1z">
+    </path>
+    <path
+        android:pathData="m43,41a1,1 0,0 0,-1 1v1a1,1 0,0 0,2 0v-1a1,1 0,0 0,-1 -1z">
+    </path>
+    <path
+        android:pathData="m35,22a1,1 0,0 0,1 -1v-1a1,1 0,0 0,-2 0v1a1,1 0,0 0,1 1z">
+    </path>
+    <path
+        android:pathData="m30,18h1a1,1 0,0 0,0 -2h-1a1,1 0,0 0,0 2z">
+    </path>
+    <path
+        android:pathData="m47,35h-1a1,1 0,0 0,0 2h1a1,1 0,0 0,0 -2z">
+    </path>
+    <path
+        android:pathData="m18,28h1a1,1 0,0 0,0 -2h-1a1,1 0,0 0,0 2z">
+    </path>
+    <path
+        android:pathData="m19,36h-1a1,1 0,0 0,0 2h1a1,1 0,0 0,0 -2z">
+    </path>
+    <path
+        android:pathData="m40,32a1,1 0,0 0,1 1h1a1,1 0,0 0,0 -2h-1a1,1 0,0 0,-1 1z">
+    </path>
+    <path
+        android:pathData="m34.707,45.293a1,1 0,0 0,-1.414 1.414l1,1a1,1 0,0 0,1.414 -1.414z">
+    </path>
+    <path
+        android:pathData="m26.707,35.293a1,1 0,0 0,-1.414 0l-1,1a1,1 0,1 0,1.414 1.414l1,-1a1,1 0,0 0,0 -1.414z">
+    </path>
+  </group>
+</vector>
