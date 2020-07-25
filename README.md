@@ -14,6 +14,7 @@ A great app to spread awareness about the pandemic and preventions both for chil
 Simple and lovely demonstration of preventive measures to be taken and Essential items to carry,as well as symptoms.
 Easy to use App with material design floating buttons.
 This App is just to help people gain basic knowledge of the pandemic and take all the preventive measures to prevent themselves from getting sick
+
 SCREENSHOTS
 ![image](https://user-images.githubusercontent.com/55583515/88456513-e4acbd00-ce9b-11ea-9066-4c74341cb0d6.png)
 
